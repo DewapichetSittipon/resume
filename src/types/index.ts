@@ -1,8 +1,11 @@
 export type Language = "EN" | "TH";
+export type Theme = "light" | "dark";
 
 export interface NavbarProps {
   language: Language;
   setLanguage: (lang: Language) => void;
+  theme: Theme;
+  setTheme: (theme: Theme) => void;
 }
 
 export interface HeroProps {

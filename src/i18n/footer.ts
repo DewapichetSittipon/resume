@@ -4,11 +4,13 @@ export const translations = {
     email: "Email",
     phone: "Phone",
     linkedin: "LinkedIn",
+    github: "GitHub",
   },
   TH: {
     tagline: "© 2024 อภิเชษฐ์ สิทธิพล. พัฒนาด้วยความแม่นยำแบบ Full-Stack",
     email: "อีเมล",
     phone: "โทรศัพท์",
     linkedin: "LinkedIn",
+    github: "GitHub",
   },
 };

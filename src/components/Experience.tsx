@@ -17,7 +17,7 @@ export const Experience: React.FC<ExperienceProps> = ({ language }) => {
       </AnimateIn>
 
       <div className="space-y-8">
-        <AnimateIn>
+        <AnimateIn delay={0}>
           <div className="relative group">
             <div className="absolute -left-4 top-0 bottom-0 w-1 bg-outline-variant group-hover:bg-secondary transition-colors rounded-full"></div>
             <div className="glass-card p-8 rounded-2xl ml-4 hover:border-secondary transition-all">
@@ -43,7 +43,7 @@ export const Experience: React.FC<ExperienceProps> = ({ language }) => {
           </div>
         </AnimateIn>
 
-        <AnimateIn>
+        <AnimateIn delay={120}>
           <div className="relative group">
             <div className="absolute -left-4 top-0 bottom-0 w-1 bg-outline-variant group-hover:bg-secondary transition-colors rounded-full"></div>
             <div className="glass-card p-8 rounded-2xl ml-4 hover:border-secondary transition-all">
@@ -68,7 +68,7 @@ export const Experience: React.FC<ExperienceProps> = ({ language }) => {
           </div>
         </AnimateIn>
 
-        <AnimateIn>
+        <AnimateIn delay={240}>
           <div className="relative group opacity-80 hover:opacity-100 transition-opacity">
             <div className="absolute -left-4 top-0 bottom-0 w-1 bg-outline-variant group-hover:bg-secondary transition-colors rounded-full"></div>
             <div className="glass-card p-8 rounded-2xl ml-4 hover:border-secondary transition-all">

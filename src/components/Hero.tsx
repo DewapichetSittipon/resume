@@ -39,13 +39,6 @@ export const Hero: React.FC<HeroProps> = ({ language }) => {
             className="flex flex-wrap gap-4 pt-8 animate-fade-up"
             style={{ animationDelay: '320ms' }}
           >
-            <a
-              className="px-8 py-4 bg-secondary text-on-secondary font-bold rounded-lg hover:scale-105 hover:shadow-[0_0_24px_rgba(167,139,250,0.4)] transition-all duration-300"
-              href="#experience"
-            >
-              {t.cv}
-            </a>
-
             <div className="flex gap-4 items-center px-4">
               <span className="text-on-surface-variant font-label-md text-label-md">
                 {t.techStack}
@@ -77,7 +70,7 @@ export const Hero: React.FC<HeroProps> = ({ language }) => {
           <div className="relative w-64 h-64 md:w-80 md:h-80 group profile-glow">
             <div className="absolute inset-0 bg-secondary/20 rounded-2xl animate-float"></div>
             <div className="absolute inset-0 border border-secondary/20 rounded-2xl -rotate-3"></div>
-            <div className="relative w-full h-full rounded-2xl overflow-hidden border border-white/10 glass-card group-hover:border-secondary/30 transition-all duration-500 group-hover:shadow-[0_0_40px_rgba(167,139,250,0.15)]">
+            <div className="relative w-full h-full rounded-2xl overflow-hidden border border-outline/30 glass-card group-hover:border-secondary/30 transition-all duration-500 group-hover:shadow-[0_0_40px_rgba(167,139,250,0.15)]">
               <img
                 src={profileImg}
                 alt="Apichet Sittipon"
