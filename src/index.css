@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.glass-card {
+  background: rgba(20, 20, 32, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(167, 139, 250, 0.1);
+  transition: border-color 0.35s ease, box-shadow 0.35s ease;
+}
+
+.glass-card:hover {
+  border-color: rgba(167, 139, 250, 0.24);
+  box-shadow: 0 0 0 1px rgba(167, 139, 250, 0.06), 0 8px 40px rgba(167, 139, 250, 0.1);
+}
+
+.skill-pill {
+  background-color: #141420;
+  border: 1px solid rgba(167, 139, 250, 0.18);
+  transition: all 0.25s ease;
+}
+
+.skill-pill:hover {
+  border-color: #a78bfa;
+  background: rgba(167, 139, 250, 0.1);
+  box-shadow: 0 0 12px rgba(167, 139, 250, 0.2);
+  transform: translateY(-1px);
+}
+
+/* Underline scales in after parent fades up */
+.animate-fade-up .underline-bar {
+  animation: scaleInX 0.55s 0.3s cubic-bezier(0.16, 1, 0.3, 1) both;
+  transform-origin: left center;
+}
+
+/* Hero radial gradient mesh */
+.hero-mesh {
+  background-image:
+    radial-gradient(ellipse 55% 55% at 68% 42%, rgba(167, 139, 250, 0.08) 0%, transparent 70%),
+    radial-gradient(ellipse 35% 40% at 12% 62%, rgba(124, 58, 237, 0.05) 0%, transparent 65%);
+}
+
+/* Violet glow ring on profile image */
+.profile-glow::after {
+  content: '';
+  position: absolute;
+  inset: -24px;
+  background: radial-gradient(ellipse at center, rgba(167, 139, 250, 0.18) 0%, transparent 70%);
+  border-radius: 50%;
+  z-index: -1;
+  pointer-events: none;
+}
