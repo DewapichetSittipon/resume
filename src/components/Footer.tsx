@@ -24,7 +24,8 @@ export const Footer: React.FC<FooterProps> = ({ language }) => {
               key={labelKey}
               className="flex items-center gap-2 text-on-surface-variant hover:text-secondary transition-colors duration-200"
               href={href}
-              {...(external ? { target: "_blank", rel: "noreferrer" } : {})}
+              target={external ? "_blank" : undefined}
+              rel={external ? "noreferrer" : undefined}
             >
               {svgPath ? (
                 <svg viewBox="0 0 24 24" className="w-5 h-5 fill-current" aria-hidden="true">
