@@ -1,0 +1,17 @@
+language: "en-US"
+reviews:
+  profile: chill
+  request_changes_workflow: false
+  high_level_summary: true
+  poem: false
+  review_status: true
+  path_filters:
+    - "!dist/**"
+    - "!node_modules/**"
+  path_instructions:
+    - path: "src/**/*.tsx"
+      instructions: "Review React components for: correct TypeScript types, proper use of props, accessibility (alt text, aria labels), and Tailwind class consistency with the design system defined in tailwind.config.js."
+    - path: "src/**/*.ts"
+      instructions: "Check for type safety and avoid use of `any`."
+chat:
+  auto_reply: true
